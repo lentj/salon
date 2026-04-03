@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE MIRRORR | Unisex Hair & Beauty Studio | Best Salon in Bengaluru</title>
+    <meta name="description" content="Premium unisex hair & beauty studio in Bengaluru. Experience luxury haircuts, skincare, beard grooming, and bridal makeup with expert stylists. Book your appointment today.">
+    <meta name="keywords" content="Best Unisex Salon in Bengaluru, Hair & Beauty Studio near Hosa Road, premium salon, haircuts, skincare, beard grooming, bridal makeup">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': '#D4AF37',
+                        'dark-gold': '#B8860B',
+                        'charcoal': '#1a1a1a',
+                        'light-charcoal': '#2d2d2d'
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'pulse-gold': 'pulseGold 2s infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        pulseGold: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.7' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        @media (max-width: 768px) {
+            .section-padding {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/918088323885" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 animate-pulse-gold">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-charcoal rounded-full flex items-center justify-center">
+                        <i class="fas fa-cut text-gold text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-charcoal">THE MIRRORR</h1>
+                    <span class="text-xs text-gold font-semibold bg-charcoal/10 px-2 py-1 rounded">Unisex Salon</span>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <ul id="nav-menu" class="hidden md:flex space-x-8">
+                    <!-- Navigation items will be rendered here -->
+                </ul>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+                <!-- Mobile navigation items will be rendered here -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-charcoal via-black to-charcoal overflow-hidden">
+            <div class="absolute inset-0 bg-black/50 z-0"></div>
+            <div class="container mx-auto px-4 z-10 text-center animate-fade-in">
+                <h2 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-slide-up">
+                    Reflect Your <span class="text-gold">Best Self</span>
+                </h2>
+                <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto animate-slide-up" style="animation-delay: 0.2s">
+                    Experience luxury grooming and beauty services at Bengaluru's premier unisex salon
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.4s">
+                    <button id="book-appointment-btn" class="bg-gold text-charcoal font-semibold px-8 py-4 rounded-lg hover:bg-dark-gold transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                    </button>
+                    <a href="tel:+918088323885" class="bg-transparent border-2 border-gold text-gold font-semibold px-8 py-4 rounded-lg hover:bg-gold hover:text-charcoal transition-all duration-300">
+                        <i class="fas fa-phone-alt mr-2"></i>Call Now: +91 8088323885
+                    </a>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i class="fas fa-chevron-down text-gold text-2xl"></i>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="section-padding bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="animate-slide-up">
+                        <h2 class="text-4xl font-bold text-charcoal mb-6">Welcome to <span class="text-gold">THE MIRRORR</span></h2>
+                        <p class="text-gray-600 mb-6">
+                            At THE MIRRORR, we believe that everyone deserves to look and feel their absolute best. 
+                            Our unisex hair and beauty studio combines expert craftsmanship with premium products 
+                            to deliver exceptional results for every client.
+                        </p>
+                        <p class="text-gray-600 mb-8">
+                            Located in the heart of Bengaluru, our salon offers a sophisticated and welcoming 
+                            environment where you can relax and transform under the care of our experienced professionals.
+                        </p>
+                        <a href="#about" class="inline-flex items-center text-gold font-semibold hover:text-dark-gold transition-colors">
+                            Discover Our Story <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://picsum.photos/400/300?random=10" alt="Salon interior with modern decor" class="rounded-lg shadow-lg w-full h-64 object-cover" loading="lazy">
+                        <img src="https://picsum.photos/400/300?random=11" alt="Stylist working on haircut" class="rounded-lg shadow-lg w-full h-64 object-cover mt-8" loading="lazy">
+                        <img src="https://picsum.photos/400/300?random=12" alt="Beauty treatment in progress" class="rounded-lg shadow-lg w-full h-64 object-cover" loading="lazy">
+                        <img src="https://picsum.photos/400/300?random=13" alt="Client satisfaction moment" class="rounded-lg shadow-lg w-full h-64 object-cover mt-8" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Services Preview -->
+        <section class="section-padding bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-charcoal mb-4">Our Premium Services</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Experience excellence in every service with our skilled professionals</p>
+                </div>
+                <div id="services-preview" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Services will be rendered here -->
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#services" class="bg-charcoal text-white font-semibold px-8 py-4 rounded-lg hover:bg-black transition-all duration-300 inline-flex items-center">
+                        View All Services <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Reviews -->
+        <section class="section-padding bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-charcoal mb-4">What Our Clients Say</h2>
+                    <p class="text-gray-600">Join hundreds of satisfied customers who trust THE MIRRORR</p>
+                </div>
+                <div id="featured-reviews" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Reviews will be rendered here -->
+                </div>
+                <div class="text-center mt-12">
+                    <a href="https://maps.app.goo.gl/ZgPyEHFp7DhGR7aG7" target="_blank" class="inline-flex items-center text-gold font-semibold hover:text-dark-gold border-2 border-gold px-6 py-3 rounded-lg transition-colors">
+                        <i class="fab fa-google mr-2"></i> More Reviews on Google
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding bg-charcoal text-white">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://picsum.photos/600/400?random=20" alt="THE MIRRORR salon interior" class="rounded-lg shadow-2xl w-full" loading="lazy">
+                    </div>
+                    <div>
+                        <h2 class="text-4xl font-bold mb-6">Our Story & Philosophy</h2>
+                        <p class="text-gray-300 mb-6">
+                            THE MIRRORR was born from a passion for transforming ordinary moments into extraordinary 
+                            experiences. We envisioned a space where artistry meets precision, and every client leaves 
+                            feeling confident and renewed.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-gold/20 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-award text-gold text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Quality Service</h3>
+                                    <p class="text-gray-300">Using only premium products and advanced techniques</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-gold/20 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-user-tie text-gold text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Experienced Staff</h3>
+                                    <p class="text-gray-300">Our team includes certified professionals with years of expertise</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-gold/20 p-3 rounded-lg mr-4">
+                                    <i class="fas fa-spray-can-sparkles text-gold text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2">Hygiene & Safety</h3>
+                                    <p class="text-gray-300">Maintaining the highest standards of cleanliness and sanitation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-padding bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-charcoal mb-4">Our Services</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive beauty and grooming services for everyone</p>
+                </div>
+                <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- All services will be rendered here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section-padding bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-charcoal mb-4">Our Gallery</h2>
+                    <p class="text-gray-600">A glimpse into our work and beautiful salon space</p>
+                </div>
+                <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Gallery images will be rendered here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section-padding bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-charcoal mb-4">Customer Testimonials</h2>
+                    <p class="text-gray-600">Real experiences from our valued clients</p>
+                </div>
+                <div id="testimonials-container" class="relative">
+                    <!-- Testimonials carousel will be rendered here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-charcoal text-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                    <p class="text-gray-300">Visit us or book your appointment today</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold mb-4 text-gold">Our Location</h3>
+                            <p class="text-gray-300 mb-2">
+                                <i class="fas fa-map-marker-alt text-gold mr-3"></i>
+                                B. NO. 84, 1st Floor, Vinayaka Nagara, Hosa Road,<br>
+                                Doddanagamangala Rd, near Sobha Silicon Oasis Apartment,<br>
+                                Bengaluru, Karnataka 560100, India
+                            </p>
+                            <a href="https://maps.app.goo.gl/ZgPyEHFp7DhGR7aG7" target="_blank" class="inline-flex items-center text-gold hover:text-dark-gold mt-2">
+                                <i class="fas fa-directions mr-2"></i> Get Directions
+                            </a>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold mb-4 text-gold">Contact Info</h3>
+                            <p class="text-gray-300 mb-3">
+                                <i class="fas fa-phone-alt text-gold mr-3"></i>
+                                <a href="tel:+918088323885" class="hover:text-gold transition-colors">+91 8088323885</a>
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4 text-gold">Business Hours</h3>
+                            <div class="space-y-2 text-gray-300">
+                                <div class="flex justify-between">
+                                    <span>Monday - Saturday:</span>
+                                    <span>9:00 AM - 8:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Sunday:</span>
+                                    <span>10:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h3 class="text-2xl font-semibold mb-4 text-gold">Follow Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gold transition-colors">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gold transition-colors">
+                                    <i class="fab fa-facebook-f text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-gold">Book Appointment</h3>
+                        <form id="appointment-form" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-300 mb-2">Full Name *</label>
+                                <input type="text" id="name" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-300 mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-gold transition-colors">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-gray-300 mb-2">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-gold transition-colors">
+                                    <option value="">Select a service</option>
+                                    <!-- Service options will be rendered here -->
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-300 mb-2">Additional Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-gold transition-colors"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gold text-charcoal font-semibold py-4 rounded-lg hover:bg-dark-gold transition-colors">
+                                Book Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gold rounded-full flex items-center justify-center">
+                            <i class="fas fa-cut text-black text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">THE MIRRORR</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Premium unisex hair & beauty studio in Bengaluru. Experience luxury grooming with expert stylists.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gold">Quick Links</h4>
+                    <ul id="footer-links" class="space-y-2">
+                        <!-- Footer links will be rendered here -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gold">Services</h4>
+                    <ul id="footer-services" class="space-y-2">
+                        <!-- Footer service links will be rendered here -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gold">Contact</h4>
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-map-marker-alt text-gold mr-2"></i>
+                        Hosa Road, Bengaluru
+                    </p>
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-phone-alt text-gold mr-2"></i>
+                        +91 8088323885
+                    </p>
+                    <p class="text-gray-400">
+                        <i class="fas fa-clock text-gold mr-2"></i>
+                        Mon-Sat: 9AM-8PM
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 THE MIRRORR Unisex Hair & Beauty Studio. All rights reserved.</p>
+                <p class="mt-2 text-sm">Best Unisex Salon in Bengaluru | Hair & Beauty Studio near Hosa Road</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Appointment Modal -->
+    <div id="appointment-modal" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-md w-full p-8 animate-slide-up">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-charcoal">Book Appointment</h3>
+                <button id="close-modal" class="text-gray-500 hover:text-charcoal">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <p class="text-gray-600 mb-6">We'll contact you shortly to confirm your appointment.</p>
+            <div class="text-center">
+                <i class="fas fa-check-circle text-gold text-5xl mb-4"></i>
+                <p class="text-lg font-semibold text-charcoal mb-2">Thank You!</p>
+                <p class="text-gray-600">Your appointment request has been received.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data Layer
+        const navigationData = [
+            { "label": "Home", "href": "#home", "icon": "fas fa-home" },
+            { "label": "About", "href": "#about", "icon": "fas fa-info-circle" },
+            { "label": "Services", "href": "#services", "icon": "fas fa-cut" },
+            { "label": "Gallery", "href": "#gallery", "icon": "fas fa-images" },
+            { "label": "Testimonials", "href": "#testimonials", "icon": "fas fa-star" },
+            { "label": "Contact", "href": "#contact", "icon": "fas fa-phone-alt" }
+        ];
+
+        const servicesData = [
+            { 
+                "id": "haircut", 
+                "title": "Haircuts & Styling", 
+                "description": "Expert haircuts, styling, and hair treatments for all hair types. From classic cuts to modern trends.",
+                "icon": "fas fa-cut",
+                "preview": true
+            },
+            { 
+                "id": "treatment", 
+                "title": "Hair Treatments", 
+                "description": "Revitalize your hair with our premium treatments including keratin, smoothing, and color services.",
+                "icon": "fas fa-spa",
+                "preview": true
+            },
+            { 
+                "id": "skincare", 
+                "title": "Skin Care & Facials", 
+                "description": "Luxury facials, skin treatments, and professional skincare routines for glowing, healthy skin.",
+                "icon": "fas fa-hand-sparkles",
+                "preview": true
+            },
+            { 
+                "id": "beard", 
+                "title": "Beard Grooming", 
+                "description": "Professional beard trimming, shaping, and grooming services for the perfect beard style.",
+                "icon": "fas fa-user",
+                "preview": false
+            },
+            { 
+                "id": "makeup", 
+                "title": "Bridal & Party Makeup", 
+                "description": "Stunning makeup for weddings, parties, and special occasions by our expert makeup artists.",
+                "icon": "fas fa-palette",
+                "preview": false
+            },
+            { 
+                "id": "spa", 
+                "title": "Spa Services", 
+                "description": "Relaxing spa treatments including massages, manicures, and pedicures for complete wellness.",
+                "icon": "fas fa-hot-tub",
+                "preview": false
+            }
+        ];
+
+        const reviewsData = [
+            {
+                "name": "Poll Ghosh",
+                "role": "Local Guide",
+                "rating": 5,
+                "review": "Exceptional Service. The team here is incredibly professional and skilled. A special shout-out goes to Arman, who is a standout professional. He is meticulous with his work and ensures top-quality results.",
+                "date": "2 weeks ago"
+            },
+            {
+                "name": "Bashar Malapoyil",
+                "role": "Regular Client",
+                "rating": 5,
+                "review": "I always go to Arman for my haircut, and he never disappoints! He does it exactly the way I want. I absolutely love his work. Highly recommended!",
+                "date": "1 month ago"
+            },
+            {
+                "name": "Arun V",
+                "role": "First-time Visitor",
+                "rating": 5,
+                "review": "My experience at Mirror Unisex Hair & Beauty Salon was truly exceptional. From the moment I entered, the salon impressed me with its refined ambience, cleanliness, and welcoming atmosphere.",
+                "date": "3 weeks ago"
+            }
+        ];
+
+        const galleryData = [
+            { "src": "https://picsum.photos/300/300?random=30", "alt": "Salon interior design" },
+            { "src": "https://picsum.photos/300/300?random=31", "alt": "Hair coloring process" },
+            { "src": "https://picsum.photos/300/300?random=32", "alt": "Facial treatment" },
+            { "src": "https://picsum.photos/300/300?random=33", "alt": "Beard grooming session" },
+            { "src": "https://picsum.photos/300/300?random=34", "alt": "Bridal makeup work" },
+            { "src": "https://picsum.photos/300/300?random=35", "alt": "Stylist at work" },
+            { "src": "https://picsum.photos/300/300?random=36", "alt": "Modern salon equipment" },
+            { "src": "https://picsum.photos/300/300?random=37", "alt": "Client satisfaction moment" }
+        ];
+
+        const footerLinksData = [
+            { "label": "Home", "href": "#home" },
+            { "label": "About Us", "href": "#about" },
+            { "label": "Services", "href": "#services" },
+            { "label": "Gallery", "href": "#gallery" },
+            { "label": "Testimonials", "href": "#testimonials" },
+            { "label": "Contact", "href": "#contact" }
+        ];
+
+        // Reusable Render Functions
+        function renderNavigation(items) {
+            return items.map(item => 
+                `<li><a href="${item.href}" class="text-gray-700 hover:text-gold font-medium transition-colors duration-300">${item.label}</a></li>`
+            ).join("");
+        }
+
+        function renderMobileNavigation(items) {
+            return items.map(item => 
+                `<a href="${item.href}" class="flex items-center text-gray-700 hover:text-gold py-2 transition-colors">
+                    <i class="${item.icon} mr-3 w-6 text-center"></i>${item.label}
+                </a>`
+            ).join("");
+        }
+
+        function renderServices(items, previewOnly = false) {
+            const filteredItems = previewOnly ? items.filter(item => item.preview) : items;
+            return filteredItems.map(item => 
+                `<div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100">
+                    <div class="w-14 h-14 bg-gold/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="${item.icon} text-gold text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-charcoal mb-3">${item.title}</h3>
+                    <p class="text-gray-600">${item.description}</p>
+                </div>`
+            ).join("");
+        }
+
+        function renderReviews(items) {
+            return items.map(item => 
+                `<div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-gold"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-charcoal">${item.name}</h4>
+                            <p class="text-sm text-gray-500">${item.role}</p>
+                        </div>
+                    </div>
+                    <div class="flex text-gold mb-3">
+                        ${'<i class="fas fa-star"></i>'.repeat(item.rating)}
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"${item.review}"</p>
+                    <p class="text-sm text-gray-400">${item.date}</p>
+                </div>`
+            ).join("");
+        }
+
+        function renderGallery(items) {
+            return items.map((item, index) => 
+                `<div class="relative overflow-hidden rounded-lg group cursor-pointer">
+                    <img src="${item.src}" alt="${item.alt}" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300"></div>
+                </div>`
+            ).join("");
+        }
+
+        function renderFooterLinks(items) {
+            return items.map(item => 
+                `<li><a href="${item.href}" class="text-gray-400 hover:text-gold transition-colors">${item.label}</a></li>`
+            ).join("");
+        }
+
+        function renderFooterServices(items) {
+            return items.map(item => 
+                `<li><a href="#services" class="text-gray-400 hover:text-gold transition-colors">${item.title}</a></li>`
+            ).join("");
+        }
+
+        function renderServiceOptions(items) {
+            return items.map(item => 
+                `<option value="${item.id}">${item.title}</option>`
+            ).join("");
+        }
+
+        // Initialize Page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Render Navigation
+            document.getElementById('nav-menu').innerHTML = renderNavigation(navigationData);
+            document.getElementById('nav-menu').classList.remove('hidden');
+            document.getElementById('mobile-menu').innerHTML = renderMobileNavigation(navigationData);
+
+            // Render Services Preview
+            document.getElementById('services-preview').innerHTML = renderServices(servicesData, true);
+            
+            // Render All Services
+            document.getElementById('services-grid').innerHTML = renderServices(servicesData, false);
+            
+            // Render Featured Reviews
+            document.getElementById('featured-reviews').innerHTML = renderReviews(reviewsData);
+            
+            // Render Gallery
+            document.getElementById('gallery-grid').innerHTML = renderGallery(galleryData);
+            
+            // Render Footer Links
+            document.getElementById('footer-links').innerHTML = renderFooterLinks(footerLinksData);
+            document.getElementById('footer-services').innerHTML = renderFooterServices(servicesData);
+            
+            // Render Service Options
+            document.getElementById('service').innerHTML = 
+                '<option value="">Select a service</option>' + renderServiceOptions(servicesData);
+
+            // Mobile Menu Toggle
+            document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+                const menu = document.getElementById('mobile-menu');
+                const icon = this.querySelector('i');
+                menu.classList.toggle('hidden');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+
+            // Smooth Scrolling for Navigation Links
+            document.addEventListener('click', function(event) {
+                const link = event.target.closest('a[href^="#"]');
+                if (!link) return;
+                
+                const href = link.getAttribute('href');
+                if (href === '#') return;
+                
+                const target = document.querySelector(href);
+                if (target) {
+                    event.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        const menuBtnIcon = document.querySelector('#mobile-menu-btn i');
+                        menuBtnIcon.classList.remove('fa-times');
+                        menuBtnIcon.classList.add('fa-bars');
+                    }
+                }
+            });
+
+            // Appointment Form Handling
+            const appointmentForm = document.getElementById('appointment-form');
+            const appointmentModal = document.getElementById('appointment-modal');
+            const bookAppointmentBtn = document.getElementById('book-appointment-btn');
+            const closeModalBtn = document.getElementById('close-modal');
+
+            bookAppointmentBtn.addEventListener('click', function() {
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            appointmentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = {
+                    name: document.getElementById('name').value,
+                    phone: document.getElementById('phone').value,
+                    service: document.getElementById('service').value,
+                    message: document.getElementById('message').value
+                };
+                
+                // In a real application, you would send this data to a server
+                console.log('Appointment Request:', formData);
+                
+                // Show success modal
+                appointmentModal.classList.remove('hidden');
+                appointmentModal.classList.add('flex');
+                
+                // Reset form
+                appointmentForm.reset();
+            });
+
+            // Close modal handlers
+            closeModalBtn.addEventListener('click', function() {
+                appointmentModal.classList.add('hidden');
+                appointmentModal.classList.remove('flex');
+            });
+
+            appointmentModal.addEventListener('click', function(e) {
+                if (e.target === appointmentModal) {
+                    appointmentModal.classList.add('hidden');
+                    appointmentModal.classList.remove('flex');
+                }
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !appointmentModal.classList.contains('hidden')) {
+                    appointmentModal.classList.add('hidden');
+                    appointmentModal.classList.remove('flex');
+                }
+            });
+
+            // Add animation on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-slide-up');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections for animation
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
